@@ -1,0 +1,39 @@
+/*
+Author: Carolyn Ott 
+Date: 2025-09-13
+*/
+
+ol {
+    list-style-type: decimal;
+}
+
+
+body {
+    background-color: beige;
+}
+
+h1 {
+    color:darkgreen; font-size: 40px;
+}
+
+h2 {
+    color:blueviolet; font-size: 40px;
+}
+
+p {
+    color:chocolate
+}
+
+ul {
+    list-style-type:square;
+}
+
+a:active {
+    color:deeppink
+}
+a:visited {
+    color:brown
+}
+a:hover {
+    color:darkred
+}
