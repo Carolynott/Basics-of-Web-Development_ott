@@ -7,7 +7,8 @@ body {
     background-color: lightskyblue;
 }
 h1 {
-    color: crimson; font-size: 40px;
+    color: whitesmoke; font-size: 40px;
+    background-color: green;
 }
 p{
     color:blueviolet
