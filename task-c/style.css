@@ -1,0 +1,151 @@
+/*
+Author: Carolyn Ott 
+Date: 2025-09-19
+*/
+
+a {color: black;}
+
+h1 { 
+    color: blue; 
+    font-size: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, Times, serif;
+}
+
+h2 {
+     font-family: 'Poppins';
+    font-weight: 700;
+}
+.heading-picture {
+    background-color: darkorange;
+    
+}
+
+
+.heading-audio {
+    background-color: crimson;
+    
+}
+
+.heading-video {
+    background-color: darkgreen;
+    color: white;
+    
+}
+
+img { 
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.source-button1 {
+    display: inline-block;
+    background-color: gray;  
+    color: white;
+    padding: 4px 6px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.source-button1:hover {
+    background-color: darkorange;
+}
+
+
+audio {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+}
+
+.source-button2 {
+    display: inline-block;
+    background-color: gray;  
+    color: white;
+    padding: 4px 6px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.source-button2:hover {
+    background-color: crimson;
+}
+
+video {
+    display: block;
+    margin:  0 auto;
+    margin-bottom: 120px;
+}
+
+.source-button3 {
+    display: inline-block;
+    background-color: gray;  
+    color: white;
+    padding: 4px 6px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.source-button3:hover {
+    background-color: #218838;
+}
+
+
+
+
+.highlight-text {
+    color: darkorange;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.highlight-text2 {
+    color:crimson;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.highlight-text3 {
+    color:darkgreen;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+
+
+
+body {
+      background-color: beige;
+    font-family: Arial, sans-serif; 
+    font-size: 16px;
+    line-height: 1.5; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+
+}
+
+ul li {
+    margin-bottom: 30px;
+}
+
+ul li p {
+    margin: 6px 0;
+}
+
+
+
