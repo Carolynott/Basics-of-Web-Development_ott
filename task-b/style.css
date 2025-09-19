@@ -14,10 +14,12 @@ body {
 
 h1 {
     color:darkgreen; font-size: 40px;
+    background-color: greenyellow;
 }
 
 h2 {
     color:blueviolet; font-size: 40px;
+    background-color: pink;
 }
 
 p {
@@ -32,8 +34,24 @@ a:active {
     color:deeppink
 }
 a:visited {
-    color:brown
+    color:white
 }
 a:hover {
     color:darkred
 }
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none; /* entfernt die Unterstreichung */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: blue;
+}
+
