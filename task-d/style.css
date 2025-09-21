@@ -74,3 +74,20 @@ img[alt] {
     max-width: 100%;
     height: auto;
 }
+
+.button {
+  display: inline-block;
+  background-color: #0a3d62;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e55039; 
+  outline: none;
+}
