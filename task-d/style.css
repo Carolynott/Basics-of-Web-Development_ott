@@ -36,7 +36,7 @@ ul li {
   margin-bottom: 5px;
 }
 
-.info-box {
+.box {
   background-color:cyan;
   padding: 10px;
 border-radius: 5px;
@@ -46,7 +46,7 @@ margin: 20px auto;
 
 }
 
-.warning-box {
+.highlight {
   background-color: crimson;
   padding: 10px;
   border-radius: 5px;
