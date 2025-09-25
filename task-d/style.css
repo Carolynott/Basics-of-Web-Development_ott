@@ -4,12 +4,7 @@ Date: 2025-09-21
 */
 
 
-h1 { 
-    color: blue; 
-    font-size: 40px;
-    text-transform: uppercase;
-    font-family:Verdana, Geneva, Tahoma, sans-serif, Times, serif;
-}
+
 body {
       background-color: beige;
     font-family: Arial, sans-serif; 
@@ -21,19 +16,26 @@ body {
 
 }
 
-h2 {
-    color: green;
-    background-color: white;
-    margin-top: 100px;
+
+
+
+
+h1, h2, h3 {
+    font-family: 'Segoe UI', sans-serif;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-h3 {font-size: 14px;
-}
 
-
-ul li {
-  font-weight: bold;
-  margin-bottom: 5px;
+section ul li {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .box {
