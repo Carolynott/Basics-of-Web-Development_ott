@@ -93,3 +93,11 @@ img[alt] {
   background-color: #e55039; 
   outline: none;
 }
+
+#special-message {
+    color: #e74c3c;
+    font-weight: bold;
+    background-color: #ffe6e6;
+    padding: 8px;
+    border-radius: 5px;
+}
