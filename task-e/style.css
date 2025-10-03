@@ -146,3 +146,9 @@ body {
   .content { margin-left: 1%; margin-right: 1%; }
   .student-info { display: none; }
 }
+
+.legend {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text);
+}

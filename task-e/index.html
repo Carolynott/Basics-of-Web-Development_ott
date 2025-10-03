@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Weekly Timetable</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <!--
@@ -21,21 +22,23 @@
       <p><strong>Student:</strong> <span class="student-name">Carolyn Ott</span></p>
       <p><strong>Group:</strong> <span class="student-group">NBMS24K</span></p>
     </section>
+
     <div class="table-wrap">
       <table class="table">
         <thead>
+
           <tr>
-            <th>Course</th>
-            <th>Mon</th>
-            <th>Tue</th>
-            <th>Wed</th>
-            <th>Thu</th>
-            <th>Fri</th>
+            <th scope="col">Course</th>
+    <th scope="col">Mon</th>
+    <th scope="col">Tue</th>
+    <th scope="col">Wed</th>
+    <th scope="col">Thu</th>
+    <th scope="col">Fri</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Entrepreneurship and innovation </td>
+            <th scope="row">Entrepreneurship and innovation</th>
             <td>❌</td>
             <td>✅</td>
             <td>❌</td>
@@ -43,7 +46,7 @@
             <td>❌</td>
           </tr>
           <tr>
-            <td>Economics and intern. economics</td>
+             <th scope="row">Economics and intern. economics</th>
             <td>❌</td>
             <td>✅</td>
             <td>❌</td>
@@ -51,7 +54,7 @@
             <td>❌</td>
           </tr>
           <tr>
-            <td>Finnish society and culture </td>
+             <th scope="row">Finnish society and culture</th>
             <td>❌</td>
             <td>❌</td>
             <td>✅</td>
@@ -59,7 +62,7 @@
             <td>❌</td>
           </tr>
           <tr>
-            <td>Functionality of SAP ERP Systeme</td>
+            <th scope="row">Functionality of SAP ERP Systeme</th>
             <td>❌</td>
             <td>❌</td>
             <td>❌</td>
@@ -67,24 +70,17 @@
             <td>❌</td>
           </tr>
           <tr>
-            <td>Basic of web Development</td>
+            <th scope="row">Basic of web Development</th>
             <td>❌</td>
             <td>❌</td>
             <td>❌</td>
             <td>✅</td>
-            <td>❌</td>
-          </tr>
-          <tr>
-            <td>Basic of web Development</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>❌</td>
-            <td>❌</td>
             <td>✅</td>
           </tr>
 
         </tbody>
       </table>
+      <p class="legend"><strong>Legende:</strong> ✅ = Kurs findet statt, ❌ = kein Kurs</p>
     </div>
   </main>
 </body>
