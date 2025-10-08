@@ -38,11 +38,15 @@
             <input id="courseName" name="courseName" type="text" required placeholder="e.g., Web Development Basics">
           </div>
 
-        <fieldset class="days-group">
+       <fieldset class="days-group">
   <legend>Days (yes = ✅, no = ❌)</legend>
+  <label><input type="checkbox" name="day" value="Mon"> Mon</label>
   <label><input type="checkbox" name="day" value="Tue"> Tue</label>
+  <label><input type="checkbox" name="day" value="Wed"> Wed</label>
+  <label><input type="checkbox" name="day" value="Thu"> Thu</label>
   <label><input type="checkbox" name="day" value="Fri"> Fri</label>
 </fieldset>
+
 
 
           <div class="form-row">
@@ -57,12 +61,16 @@
     <div class="table-wrap">
       <table class="table" id="timetable">
         <thead>
-          <tr>
-            <th>Course</th>
-            <th>Tue</th>
-            <th>Fri</th>
-          </tr>
-        </thead>
+  <tr>
+    <th>Course</th>
+    <th>Mon</th>
+    <th>Tue</th>
+    <th>Wed</th>
+    <th>Thu</th>
+    <th>Fri</th>
+  </tr>
+</thead>
+
         <tbody>
         </tbody>
       </table>
