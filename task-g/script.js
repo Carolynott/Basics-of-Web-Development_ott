@@ -1,5 +1,5 @@
-//script.js
-// Author: Carolyn ott 
+// script.js
+// Author: Carolyn Ott
 // Date: 2025-10-24
 // Handles custom validation and table row insertion
 
