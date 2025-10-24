@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
       // If valid → add a new row
         const newRow = document.createElement("tr");
-        [timestampInput.value, fullName, email, phone, birthDate].forEach(val => {
+        [timestampInput.value, fullName, email, phone, birthDate, terms? "yes":"no"].forEach(val => {
         const cell = document.createElement("td");
         cell.textContent = val;
         newRow.appendChild(cell);
