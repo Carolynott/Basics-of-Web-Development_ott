@@ -1,6 +1,6 @@
 // script.js
 // Author: Carolyn Ott
-// Date: 2025-10-30
+// Date: 2025-10-31
 // Handles custom validation and table row insertion
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -8,9 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const tableBody = document.querySelector("#timetable");
   const timestampInput = document.getElementById("timestamp");
 
+  // ✅ Updated timestamp function: YYYY-MM-DD HH:MM
   const updateTimestamp = () => {
     const now = new Date();
-    timestampInput.value = now.toISOString();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, "0");
+    const day = String(now.getDate()).padStart(2, "0");
+    const hours = String(now.getHours()).padStart(2, "0");
+    const minutes = String(now.getMinutes()).padStart(2, "0");
+
+    timestampInput.value = `${year}-${month}-${day} ${hours}:${minutes}`;
   };
   updateTimestamp();
 
@@ -21,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Clear previous errors
     document.querySelectorAll("p[id$='Error']").forEach(el => el.textContent = "");
 
+    // Collect field values
     const fullName = form.fullName.value.trim();
     const email = form.email.value.trim();
     const phone = form.phone.value.trim();
@@ -29,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let valid = true;
 
-    // Name
+    // Validate name
     const nameParts = fullName.split(/\s+/);
     if (nameParts.length < 2 || nameParts.some(p => p.length < 2)) {
       valid = false;
@@ -37,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Please enter your full name (first and last, at least 2 letters each).";
     }
 
-    // Email
+    // Validate email
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
       valid = false;
@@ -45,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "Please enter a valid email address.";
     }
 
-    // Phone
+    // Validate phone (Finnish format +358...)
     const phonePattern = /^\+358\d{7,10}$/;
     if (!phonePattern.test(phone)) {
       valid = false;
@@ -53,26 +61,32 @@ document.addEventListener("DOMContentLoaded", () => {
         "Please enter a valid Finnish number (+358 followed by 7–10 digits).";
     }
 
-    // Birth Date
+    // Validate birth date
     if (!birthDate) {
       valid = false;
-      document.getElementById("birthError").textContent = "Please choose your birth date.";
+      document.getElementById("birthError").textContent =
+        "Please choose your birth date.";
     } else {
       const birth = new Date(birthDate);
       const today = new Date();
       if (birth > today) {
         valid = false;
-        document.getElementById("birthError").textContent = "Birth date cannot be in the future.";
+        document.getElementById("birthError").textContent =
+          "Birth date cannot be in the future.";
       } else {
+        // Check if 13+
         const age = today.getFullYear() - birth.getFullYear();
-        if (age < 13 || (age === 13 && today < new Date(birth.setFullYear(birth.getFullYear() + 13)))) {
+        const ageDate = new Date(birth);
+        ageDate.setFullYear(birth.getFullYear() + 13);
+        if (today < ageDate) {
           valid = false;
-          document.getElementById("birthError").textContent = "You must be at least 13 years old.";
+          document.getElementById("birthError").textContent =
+            "You must be at least 13 years old.";
         }
       }
     }
 
-    // Terms
+    // Validate terms
     if (!terms) {
       valid = false;
       document.getElementById("termsError").textContent =
@@ -81,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!valid) return;
 
-    // Add new row
+    // ✅ Add new row with formatted timestamp
     const newRow = document.createElement("tr");
     [timestampInput.value, fullName, email, phone, birthDate, terms ? "yes" : "no"].forEach(val => {
       const cell = document.createElement("td");
