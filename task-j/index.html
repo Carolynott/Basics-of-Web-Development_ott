@@ -1,101 +1,171 @@
+<!--
+    Author: Carolyn Ott, Vitus W.
+    Date: 2025-11-21
+-->
+
 <!DOCTYPE html>
-
 <html lang="en">
-
+    
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>mci4me Webmail :: index.html</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0"><meta name="theme-color" content="#666"><meta name="msapplication-navbutton-color" content="#004983">
-	<link rel="shortcut icon" href="/static-wfyqXPeqprJRkMQw/skins/elastic/images/favicon.ico?s=1749023864">
-	<link rel="stylesheet" href="/static-wfyqXPeqprJRkMQw/skins/elastic/deps/bootstrap.min.css?s=1749023864">
-	
-		<link rel="stylesheet" href="/static-wfyqXPeqprJRkMQw/skins/elastic-mci/styles/styles.css?s=1749023864">
-		
-	
-	
-<link rel="stylesheet" type="text/css" href="/static-wfyqXPeqprJRkMQw/plugins/jqueryui/themes/elastic/jquery-ui.min.css?s=1749023864"><script src="/static-wfyqXPeqprJRkMQw/program/js/jquery.min.js?s=1749023864"></script><script src="/static-wfyqXPeqprJRkMQw/program/js/common.min.js?s=1749023864"></script><script src="/static-wfyqXPeqprJRkMQw/program/js/app.min.js?s=1749023864"></script><script src="/static-wfyqXPeqprJRkMQw/program/js/domain.js?s=1749023864"></script><script>
-/*
-        @licstart  The following is the entire license notice for the 
-        JavaScript code in this page.
-
-        Copyright (C) The Roundcube Dev Team
-
-        The JavaScript code in this page is free software: you can redistribute
-        it and/or modify it under the terms of the GNU General Public License
-        as published by the Free Software Foundation, either version 3 of
-        the License, or (at your option) any later version.
-
-        The code is distributed WITHOUT ANY WARRANTY; without even the implied
-        warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-        See the GNU GPL for more details.
-
-        @licend  The above is the entire license notice
-        for the JavaScript code in this page.
-*/
-var rcmail = new rcube_webmail();
-rcmail.set_env({"task":"mail","standard_windows":false,"locale":"de_DE","devel_mode":null,"rcversion":10611,"cookie_domain":"","cookie_path":"/","cookie_secure":true,"dark_mode_support":false,"skin":"elastic-mci","assets_path":"/static-wfyqXPeqprJRkMQw/","extwin":1,"blankpage":"/static-wfyqXPeqprJRkMQw/skins/elastic-mci/watermark.html","refresh_interval":60,"session_lifetime":600,"action":"get","comm_path":"/C00jp5qecKTdB2EP/?_task=mail","user_id":"KjXL99VuY2E4oYm6","compose_extwin":false,"date_format":"yy-mm-dd","date_format_localized":"JJJJ-MM-TT","browser_capabilities":{"pdf":"1","flash":"0","tiff":"0","webp":"1","pgpmime":"0"},"mailbox":"INBOX","uid":"547","part":"2","filename":"index.html","mimetype":"text/html","request_token":"54tgVOk5mVHBRy8UCergnuhjTQ50BMGM"});
-rcmail.add_label({"loading":"Wird geladen …","servererror":"Serverfehler!","connerror":"Verbindungsfehler (Fehler beim Erreichen des Servers)!","requesttimedout":"Zeitüberschreitung der Anforderung","refreshing":"Aktualisierung läuft …","windowopenerror":"Das Popup-Fenster wurde blockiert!","uploadingmany":"Dateien werden hochgeladen …","uploading":"Datei wird hochgeladen …","close":"Schließen","save":"Speichern","cancel":"Abbrechen","alerttitle":"Achtung","confirmationtitle":"Sind Sie sich sicher...","delete":"Löschen","continue":"Weiter","ok":"OK","back":"Zurück","errortitle":"Ein Fehler ist aufgetreten!","options":"Optionen","plaintoggle":"Einfacher Text","htmltoggle":"HTML","previous":"Vorherige(r)","next":"Nächste(r)","select":"Auswahl","browse":"Durchsuchen","choosefile":"Datei auswählen…","choosefiles":"Dateien auswählen…","properties":"Eigenschaften"});
-rcmail.gui_container("toolbar","messagetoolbar");rcmail.register_button('download', 'rcmbtn101', 'link', 'download', '', '');
-rcmail.register_button('print', 'rcmbtn102', 'link', 'print', '', '');
-rcmail.gui_object('messagepartframe', 'messagepartframe');
-rcmail.gui_object('message', 'messagestack');
-</script>
-
-<script src="/static-wfyqXPeqprJRkMQw/plugins/jqueryui/js/jquery-ui.min.js?s=1749023864"></script><script src="/static-wfyqXPeqprJRkMQw/plugins/jqueryui/js/i18n/datepicker-de.js?s=1749023864"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideNow | E-Bike Rentals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="task-mail action-get">
-	
-		<div id="layout">
-	
 
+<body class="text-gray-800 font-sans">
+    <!-- HEADER -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold text-green-600">RideNow</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="hover:text-green-600">About</a>
+                <a href="#bikes" class="hover:text-green-600">Bikes</a>
+                <a href="#features" class="hover:text-green-600">Why Us</a>
+                <a href="#contact" class="hover:text-green-600">Contact</a>
 
-<h1 class="voice">index.html</h1>
+                <!-- NEW CATALOG LINK -->
+                <a href="catalog.html" class="hover:text-green-600 font-semibold">Catalog</a>
+            </nav>
+            <a href="#contact" class="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">Book Now</a>
+        </div>
+    </header>
 
-<div id="layout-content" class="selected">
-	<h2 id="aria-label-toolbar" class="voice">Anwendungstoolbar</h2>
-	<div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
-		<span class="header-title constant">index.html</span>
-		<div id="messagetoolbar" class="toolbar menu">
-			<a title="Eigenschaften" class="info" onclick="UI.props_dialog()" id="rcmbtn100" role="button" href="#"><span class="inner">Eigenschaften</span></a>
-			<a title="Herunterladen" class="download disabled" id="rcmbtn101" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('download','',this,event)"><span class="inner">Herunterladen</span></a>
-			<a title="Drucken" class="print disabled" data-hidden="small" id="rcmbtn102" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('print','',this,event)"><span class="inner">Drucken</span></a>
-			
-			
-			
-		</div>
-	</div>
-	<h2 id="aria-label-messagepart" class="voice">Anhangvorschau</h2>
-	<div class="iframe-wrapper">
-		<iframe name="messagePartFrame" id="messagepartframe" title="Anhangvorschau" role="main" aria-labelledby="aria-label-messagepart" src="/C00jp5qecKTdB2EP/?_task=mail&amp;_mbox=INBOX&amp;_uid=547&amp;_part=2&amp;_action=get&amp;_extwin=1&amp;_embed=1&amp;_framed=1"></iframe>
-	</div>
+    <!-- HERO -->
+    <section class="relative bg-green-700 text-white h-[80vh] flex items-center">
+        <div class="absolute inset-0 bg-gradient-to-b from-green-700 to-green-800"></div>
 
-</div>
+        <div class="relative z-10 max-w-3xl mx-auto text-center px-4">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Go Further, Faster</h2>
+            <p class="text-lg md:text-2xl mb-6">
+                Explore your city with eco-friendly e-bikes — wherever, whenever.
+            </p>
+            <a href="#bikes"
+                class="bg-white text-green-800 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100">
+                Explore Bikes
+            </a>
+        </div>
+    </section>
 
+    <!-- ABOUT -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-5xl mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold mb-4">About RideNow</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                At RideNow, we believe in greener cities and smarter mobility. We provide high-quality electric
+                bikes
+                for short- and long-term rentals, helping you move freely without emissions or limits.
+            </p>
+        </div>
+    </section>
 
+    <!-- BIKES -->
+    <section id="bikes" class="py-16 max-w-6xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-10">Our Bestsellers</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Electric_bike_for_commuting.jpg"
+                    alt="City E-Bike" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">City Cruiser</h3>
+                    <p class="text-gray-600 mb-4">Perfect for daily commutes and short urban trips with comfort and
+                        style.</p>
+                    <span class="font-bold text-green-600">€15/day</span>
+                </div>
+            </article>
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <img src="https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-storefront/default/dwead92c71/category-landing/mountain/seo-mtb-light.jpg?sw=632&sh=356&sm=cut&sfrm=jpg&q=80"
+                    alt="Mountain E-Bike" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Trail Explorer</h3>
+                    <p class="text-gray-600 mb-4">Tackle hills and trails effortlessly with our high-torque mountain
+                        e-bike.</p>
+                    <span class="font-bold text-green-600">€25/day</span>
+                </div>
+            </article>
+            <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/ride-folding-bikes-6491fb43ae3de.jpg?resize=1400:*"
+                    alt="Folding E-Bike" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Fold & Go</h3>
+                    <p class="text-gray-600 mb-4">Compact and portable — ideal for mixed travel or small apartments.
+                    </p>
+                    <span class="font-bold text-green-600">€18/day</span>
+                </div>
+            </article>
+        </div>
+    </section>
 
+    <!-- FEATURES -->
+    <section id="features" class="py-16 bg-green-50">
+        <div class="max-w-5xl mx-auto text-center px-4">
+            <h2 class="text-3xl font-bold mb-8">Why Choose RideNow?</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://img.icons8.com/fluency/96/000000/leaf.png" alt="Eco-Friendly icon"
+                        class="mx-auto mb-4">
+                    <h3 class="font-semibold text-lg">Eco-Friendly</h3>
+                    <p class="text-gray-600">Zero emissions, 100% fun.</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/fluency/96/000000/wallet.png" alt="Affordable icon"
+                        class="mx-auto mb-4">
+                    <h3 class="font-semibold text-lg">Affordable</h3>
+                    <p class="text-gray-600">Flexible pricing for every ride.</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/fluency/96/000000/time-machine.png" alt="Flexible Rentals icon"
+                        class="mx-auto mb-4">
+                    <h3 class="font-semibold text-lg">Flexible Rentals</h3>
+                    <p class="text-gray-600">From an hour to a week — you choose.</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/fluency/96/000000/smartphone.png" alt="App Integration icon"
+                        class="mx-auto mb-4">
+                    <h3 class="font-semibold text-lg">App Integration</h3>
+                    <p class="text-gray-600">Unlock bikes directly from our app.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div id="properties-menu" class="popupmenu" role="dialog" aria-labelledby="aria-label-contentinfo">
-	<h3 id="aria-label-contentinfo" class="voice">Eigenschaften</h3>
-	<div class="scroller">
-		<table class="listing props-table" role="contentinfo" aria-labelledby="aria-label-contentinfo"><tbody><tr><td class="title">Name:</td><td class="header">index.html</td></tr><tr><td class="title">Typ:</td><td class="header">text/html</td></tr><tr><td class="title">Größe:</td><td class="header">~9 KB</td></tr></tbody></table>
-	</div>
-</div>
+    <!-- CALL TO ACTION -->
+    <section id="contact" class="py-20 text-center bg-green-600 text-white">
+        <h2 class="text-4xl font-bold mb-6">Ready to Ride?</h2>
+        <p class="text-lg mb-8">Join thousands of riders who’ve chosen RideNow for smarter, greener travel.</p>
+        <a href="catalog.html" class="bg-white text-green-700 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100">
+            View Catalog
+        </a>
+    </section>
 
-
-</div>
-
-
-
-<div id="messagestack"></div>
-<script>
-$(function() {
-rcmail.init();
-});
-</script>
-
-
-
-<script src="/static-wfyqXPeqprJRkMQw/skins/elastic/deps/bootstrap.bundle.min.js?s=1749023864"></script>
-<script src="/static-wfyqXPeqprJRkMQw/skins/elastic/ui.min.js?s=1749023864"></script>
-
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-10">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4 text-center md:text-left">
+            <div>
+                <h3 class="text-xl font-bold mb-2 text-white">RideNow</h3>
+                <p>Your partner in sustainable city travel.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-2 text-white">Quick Links</h4>
+                <ul class="space-y-1">
+                    <li><a href="#about" class="hover:text-green-500">About</a></li>
+                    <li><a href="#bikes" class="hover:text-green-500">Bikes</a></li>
+                    <li><a href="#features" class="hover:text-green-500">Why Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-2 text-white">Contact</h4>
+                <p>Email: info@ridenow.com</p>
+                <p>Phone: +358 123 456 789</p>
+                <div class="flex justify-center md:justify-start space-x-4 mt-3">
+                    <a href="#"><img src="https://img.icons8.com/fluency/48/facebook.png" alt="Facebook icon"></a>
+                    <a href="#"><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram icon"></a>
+                    <a href="#"><img src="https://img.icons8.com/fluency/48/twitterx.png" alt="Twitter icon"></a>
+                </div>
+            </div>
+        </div>
+        <p class="text-center text-sm mt-10">&copy; 2025 RideNow. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

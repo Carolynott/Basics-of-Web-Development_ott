@@ -1,291 +1,142 @@
+<!--
+    Author: Carolyn Ott, Vitus W.
+    Date: 2025-11-21
+-->
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>mci4me Webmail :: Mail</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0"><meta name="theme-color" content="#666"><meta name="msapplication-navbutton-color" content="#004983">
-	<link rel="shortcut icon" href="/static-wfyqXPeqprJRkMQw/skins/elastic/images/favicon.ico?s=1749023864">
-	<link rel="stylesheet" href="/static-wfyqXPeqprJRkMQw/skins/elastic/deps/bootstrap.min.css?s=1749023864">
-	
-		<link rel="stylesheet" href="/static-wfyqXPeqprJRkMQw/skins/elastic-mci/styles/styles.css?s=1749023864">
-		
-	
-	
-<link rel="stylesheet" type="text/css" href="/static-wfyqXPeqprJRkMQw/plugins/jqueryui/themes/elastic/jquery-ui.min.css?s=1749023864"><script src="/static-wfyqXPeqprJRkMQw/program/js/jquery.min.js?s=1749023864"></script><script src="/static-wfyqXPeqprJRkMQw/program/js/common.min.js?s=1749023864"></script><script src="/static-wfyqXPeqprJRkMQw/program/js/app.min.js?s=1749023864"></script><script src="/static-wfyqXPeqprJRkMQw/program/js/domain.js?s=1749023864"></script><script>
-/*
-        @licstart  The following is the entire license notice for the 
-        JavaScript code in this page.
-
-        Copyright (C) The Roundcube Dev Team
-
-        The JavaScript code in this page is free software: you can redistribute
-        it and/or modify it under the terms of the GNU General Public License
-        as published by the Free Software Foundation, either version 3 of
-        the License, or (at your option) any later version.
-
-        The code is distributed WITHOUT ANY WARRANTY; without even the implied
-        warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-        See the GNU GPL for more details.
-
-        @licend  The above is the entire license notice
-        for the JavaScript code in this page.
-*/
-var rcmail = new rcube_webmail();
-rcmail.set_env({"task":"mail","standard_windows":false,"locale":"de_DE","devel_mode":null,"rcversion":10611,"cookie_domain":"","cookie_path":"/","cookie_secure":true,"dark_mode_support":false,"skin":"elastic-mci","assets_path":"/static-wfyqXPeqprJRkMQw/","blankpage":"/static-wfyqXPeqprJRkMQw/skins/elastic-mci/watermark.html","refresh_interval":60,"session_lifetime":600,"action":"show","comm_path":"/C00jp5qecKTdB2EP/?_task=mail","user_id":"KjXL99VuY2E4oYm6","compose_extwin":false,"date_format":"yy-mm-dd","date_format_localized":"JJJJ-MM-TT","browser_capabilities":{"pdf":"1","flash":"0","tiff":"0","webp":"1","pgpmime":"0"},"uid":"547","safemode":true,"message_context":null,"message_flags":["seen"],"sender":"Vitus Wagensonner \u003Cvituswagensonner@icloud.com\u003E","mailbox":"INBOX","username":"oc0452@mci4me.at","permaurl":"/C00jp5qecKTdB2EP/?_task=mail&_action=show&_uid=547&_mbox=INBOX","has_writeable_addressbook":true,"delimiter":"/","mimetypes":["text/plain","text/html","image/jpeg","image/gif","image/png","image/bmp","image/webp","application/x-javascript","application/pdf","message/rfc822"],"flag_for_deletion":true,"read_when_deleted":true,"forward_attachment":true,"drafts_mailbox":"INBOX/Drafts","trash_mailbox":"INBOX/Trash","junk_mailbox":"INBOX/Spam","mailboxes":{"INBOX":{"id":"INBOX","name":"Posteingang","virtual":false,"class":"inbox"},"INBOX/Drafts":{"id":"INBOX/Drafts","name":"Entwürfe","virtual":false,"class":"drafts"},"INBOX/Sent":{"id":"INBOX/Sent","name":"Gesendet","virtual":false,"class":"sent"},"INBOX/Spam":{"id":"INBOX/Spam","name":"Spam","virtual":false,"class":"junk"},"INBOX/Trash":{"id":"INBOX/Trash","name":"Gelöscht","virtual":false,"class":"trash"},"INBOX/Finnland":{"id":"INBOX/Finnland","name":"Finnland","virtual":false}},"mailboxes_list":["INBOX","INBOX/Drafts","INBOX/Sent","INBOX/Spam","INBOX/Trash","INBOX/Finnland"],"sieve_headers":[["From","vituswagensonner@icloud.com"],["To","oc0452@mci4me.at"]],"attachments":{"1":"text/html","2":"text/html"},"request_token":"54tgVOk5mVHBRy8UCergnuhjTQ50BMGM"});
-rcmail.add_label({"loading":"Wird geladen …","servererror":"Serverfehler!","connerror":"Verbindungsfehler (Fehler beim Erreichen des Servers)!","requesttimedout":"Zeitüberschreitung der Anforderung","refreshing":"Aktualisierung läuft …","windowopenerror":"Das Popup-Fenster wurde blockiert!","uploadingmany":"Dateien werden hochgeladen …","uploading":"Datei wird hochgeladen …","close":"Schließen","save":"Speichern","cancel":"Abbrechen","alerttitle":"Achtung","confirmationtitle":"Sind Sie sich sicher...","delete":"Löschen","continue":"Weiter","ok":"OK","managesieve.newfilter":"Neuer Filter","managesieve.usedata":"Die folgenden Daten im Filter benutzen:","managesieve.nodata":"Mindestens eine Position muss ausgewählt werden!","managesieve.nextstep":"Nächster Schritt","checkingmail":"Auf neue Nachrichten wird geprüft …","deletemessage":"Nachricht löschen","movemessagetotrash":"Nachricht in den Papierkorb verschieben","movingmessage":"Nachrichten werden verschoben …","deletingmessage":"Nachrichten werden gelöscht …","markingmessage":"Nachrichten werden markiert …","replyall":"Allen antworten","replylist":"Liste antworten","bounce":"Erneut senden","bouncemsg":"Erneut senden (falls unzustellbar)","sendingmessage":"Nachricht wird gesendet …","back":"Zurück","errortitle":"Ein Fehler ist aufgetreten!","options":"Optionen","plaintoggle":"Einfacher Text","htmltoggle":"HTML","previous":"Vorherige(r)","next":"Nächste(r)","select":"Auswahl","browse":"Durchsuchen","choosefile":"Datei auswählen…","choosefiles":"Dateien auswählen…","purgefolderconfirm":"Wollen Sie diesen Ordner wirklich leeren?","deletemessagesconfirm":"Wollen Sie die ausgewählten Nachrichten wirklich löschen?","viewsource":"Quelltext anzeigen","details":"Details","summary":"Zusammenfassung","arialabelmessageheaders":"Nachrichtenkopfzeilen"});
-rcmail.gui_container("taskbar","taskmenu");
-rcmail.gui_container("toolbar","mailtoolbar");
-rcmail.gui_container("forwardmenu","forward-menu");
-rcmail.gui_container("replyallmenu","replyall-menu");
-rcmail.gui_container("messagemenu","message-menu");
-rcmail.gui_container("markmenu","markmessage-menu");
-rcmail.gui_container("headerlinks","header-links");
-rcmail.gui_container("attachmentmenu","attachmentmenu");
-rcmail.gui_container("mailtomenu","mailto-menu");rcmail.register_button('managesieve-create', 'rcmbtn100', 'link', 'icon filterlink active', '', '');
-rcmail.register_button('compose', 'rcmbtn101', 'link', '', '', '');
-rcmail.register_button('mail', 'rcmbtn102', 'link', '', 'mail selected', '');
-rcmail.register_button('addressbook', 'rcmbtn103', 'link', '', 'contacts selected', '');
-rcmail.register_button('settings', 'rcmbtn104', 'link', '', 'settings selected', '');
-rcmail.register_button('logout', 'rcmbtn105', 'link', '', '', '');
-rcmail.register_button('compose', 'rcmbtn106', 'link', '', '', '');
-rcmail.register_button('reply', 'rcmbtn107', 'link', 'reply', '', '');
-rcmail.register_button('reply-all', 'rcmbtn108', 'link', 'reply-all', '', '');
-rcmail.register_button('forward', 'rcmbtn109', 'link', 'forward', '', '');
-rcmail.register_button('delete', 'rcmbtn110', 'link', 'delete', '', '');
-rcmail.register_button('print', 'rcmbtn111', 'link', 'print', '', '');
-rcmail.register_button('previousmessage', 'rcmbtn112', 'link', 'prev', '', '');
-rcmail.register_button('nextmessage', 'rcmbtn113', 'link', 'next', '', '');
-rcmail.register_button('forward-inline', 'rcmbtn114', 'link', 'forward inline active', '', '');
-rcmail.register_button('forward-attachment', 'rcmbtn115', 'link', 'forward attachment active', '', '');
-rcmail.register_button('bounce', 'rcmbtn116', 'link', 'forward bounce active', '', '');
-rcmail.register_button('reply-all', 'rcmbtn117', 'link', 'reply all active', '', '');
-rcmail.register_button('reply-list', 'rcmbtn118', 'link', 'reply list active', '', '');
-rcmail.register_button('print', 'rcmbtn119', 'link', 'print active', '', '');
-rcmail.register_button('download', 'rcmbtn120', 'link', 'download active', '', '');
-rcmail.register_button('edit', 'rcmbtn121', 'link', 'edit asnew active', '', '');
-rcmail.register_button('viewsource', 'rcmbtn122', 'link', 'source active', '', '');
-rcmail.register_button('move', 'rcmbtn123', 'link', 'move active', '', '');
-rcmail.register_button('copy', 'rcmbtn124', 'link', 'copy active', '', '');
-rcmail.register_button('open', 'rcmbtn125', 'link', 'extwin active', '', '');
-rcmail.register_button('mark', 'rcmbtn126', 'link', 'read active', '', '');
-rcmail.register_button('mark', 'rcmbtn127', 'link', 'unread active', '', '');
-rcmail.register_button('mark', 'rcmbtn128', 'link', 'flag active', '', '');
-rcmail.register_button('mark', 'rcmbtn129', 'link', 'unflag active', '', '');
-rcmail.register_button('mark', 'rcmbtn130', 'link', 'undo active', '', '');
-rcmail.register_button('extwin', 'rcmbtn131', 'link', '', '', '');
-rcmail.gui_object('attachments', 'attachment-list');
-rcmail.gui_object('remoteobjectsmsg', 'remote-objects-message');
-rcmail.gui_object('messagebody', 'messagebody');
-rcmail.register_button('open-attachment', 'attachmenuopen', 'link', 'extwin active', '', '');
-rcmail.register_button('download-attachment', 'attachmenudownload', 'link', 'download active', '', '');
-rcmail.gui_object('message', 'messagestack');
-</script>
-
-<script src="/static-wfyqXPeqprJRkMQw/plugins/jqueryui/js/jquery-ui.min.js?s=1749023864"></script><script src="/static-wfyqXPeqprJRkMQw/plugins/jqueryui/js/i18n/datepicker-de.js?s=1749023864"></script><script src="/static-wfyqXPeqprJRkMQw/plugins/managesieve/managesieve.min.js?s=1749023864"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideNow | Catalog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="task-mail action-show">
-	
-		<div id="layout">
-	
 
-<div id="layout-menu">
-	<h2 id="aria-label-tasknav" class="voice">Anwendungsaufgaben</h2>
-	<div class="popover-header">
-		<img src="/static-wfyqXPeqprJRkMQw/skins/elastic-mci/images/logo.png?s=1749023864" id="logo" alt="Logo">
-		<a class="button icon cancel"><span class="inner">Schließen</span></a>
-	</div>
-	<div id="taskmenu" class="menu toolbar" role="navigation" aria-labelledby="aria-label-tasknav">
-		<span class="action-buttons">
-			
-				<a class="compose" title="Neue Nachricht schreiben" data-fab="true" data-fab-task="mail" data-fab-action="none" id="rcmbtn101" role="button" href="/C00jp5qecKTdB2EP/?_task=mail&amp;_action=compose" onclick="return rcmail.command('compose','',this,event)"><span class="inner">Schreiben</span></a>
-			
-		</span>
-		
-			<a class="mail" id="rcmbtn102" role="button" href="/C00jp5qecKTdB2EP/?_task=mail" onclick="return rcmail.command('switch-task','mail',this,event)"><span class="inner">E-Mail</span></a>
-		
-		<a class="contacts" id="rcmbtn103" role="button" href="/C00jp5qecKTdB2EP/?_task=addressbook" onclick="return rcmail.command('switch-task','addressbook',this,event)"><span class="inner">Kontakte</span></a>
-		
-		<a class="settings" id="rcmbtn104" role="button" href="/C00jp5qecKTdB2EP/?_task=settings" onclick="return rcmail.command('switch-task','settings',this,event)"><span class="inner">Einstellungen</span></a>
-		<span class="special-buttons">
-			
-			<a class="logout" id="rcmbtn105" role="button" href="/C00jp5qecKTdB2EP/?_task=logout" onclick="return rcmail.command('switch-task','logout',this,event)"><span class="inner">Abmelden</span></a>
-		</span>
-	</div>
-</div>
+<body class="text-gray-800 font-sans">
 
+    <!-- HEADER (same as landing) -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold text-green-600">RideNow</h1>
 
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#about" class="hover:text-green-600">About</a>
+                <a href="index.html#bikes" class="hover:text-green-600">Bikes</a>
+                <a href="index.html#features" class="hover:text-green-600">Why Us</a>
+                <a href="index.html#contact" class="hover:text-green-600">Contact</a>
+                <a href="catalog.html" class="hover:text-green-600 font-semibold">Catalog</a>
+            </nav>
+        </div>
+    </header>
 
+    <!-- INTRO -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-5xl mx-auto text-center px-4">
+            <h1 class="text-4xl font-bold mb-4">Our Rental Catalog</h1>
+            <p class="text-gray-600 text-lg">Choose from a wide range of high-quality e-bikes for daily or weekly
+                adventures.</p>
+        </div>
+    </section>
 
-<h1 class="voice">Vorschau der Nachricht</h1>
+    <!-- PRODUCT GRID -->
+    <section class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-10">
 
-<div id="layout-content" class="selected">
-	
-		<h2 id="aria-label-toolbar" class="voice">Anwendungstoolbar</h2>
-		<div class="header" role="toolbar" aria-labelledby="aria-label-toolbar">
-			<a class="button icon back-list-button" href="#back"><span class="inner">Zurück</span></a>
-			<span class="header-title"></span>
-			
-<div id="mailtoolbar" class="toolbar menu" role="toolbar">
-	<a class="compose hidden" title="Neue Nachricht schreiben" id="rcmbtn106" role="button" href="/C00jp5qecKTdB2EP/?_task=mail&amp;_action=compose" onclick="return rcmail.command('compose','',this,event)"><span class="inner">Schreiben</span></a>
-	<a class="reply disabled" title="Antwort verfassen" data-content-button="true" id="rcmbtn107" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('reply','',this,event)"><span class="inner">Antworten</span></a>
-	<span class="dropbutton">
-		<a class="reply-all disabled" title="Antwort an Liste oder an Absender und alle Empfänger verfassen" id="rcmbtn108" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('reply-all','',this,event)"><span class="inner">Allen antworten</span></a>
-		<a href="#reply-all" id="replyallmenulink" class="dropdown" data-popup="replyall-menu" tabindex="0">
-			<span class="inner">Allen antworten-Optionen</span>
-		</a>
-	</span>
-	<span class="dropbutton">
-		<a class="forward disabled" title="Nachricht weiterleiten" id="rcmbtn109" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('forward','',this,event)"><span class="inner">Weiterleiten</span></a>
-		<a href="#forward" id="forwardmenulink" class="dropdown" data-popup="forward-menu" tabindex="0">
-			<span class="inner">Weiterleitungsoptionen</span>
-		</a>
-	</span>
-	<span class="spacer"></span>
-	<a class="delete disabled" title="Nachricht löschen" id="rcmbtn110" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('delete','',this,event)"><span class="inner">Löschen</span></a>
-	
-		<a class="print disabled" title="Nachricht drucken" data-hidden="small" id="rcmbtn111" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('print','',this,event)"><span class="inner">Drucken</span></a>
-	
-	
-	<a id="markmessagemenulink" class="markmessage" title="Nachrichten markieren" data-popup="markmessage-menu" role="button" href="#"><span class="inner">Markieren</span></a>
-	<a id="messagemenulink" class="more" title="Mehr …" data-popup="message-menu" role="button" href="#"><span class="inner">Mehr</span></a>
-	
-		<span class="spacer"></span>
-		<a class="prev disabled" title="Vorherige Nachricht anzeigen" data-hidden="small" id="rcmbtn112" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('previousmessage','',this,event)"><span class="inner">Vorherige(r)</span></a>
-		<a class="next disabled" title="Nächste Nachricht anzeigen" data-hidden="small" id="rcmbtn113" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('nextmessage','',this,event)"><span class="inner">Nächste(r)</span></a>
-	
-</div>
+        <!-- 6 PRODUCT CARDS -->
+        <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Electric_bike_for_commuting.jpg" alt="City Cruiser E-Bike"
+                class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">City Cruiser</h3>
+                <p class="text-gray-600 mb-4">Easy-handling e-bike perfect for flat city rides.</p>
+                <p class="font-bold text-green-600">15 €/d • 95 €/wk</p>
+            </div>
+        </article>
 
-<div id="forward-menu" class="popupmenu">
-	<h3 id="aria-label-forward-menu" class="voice">Weiterleitungsoptionen</h3>
-	<ul class="menu listing" role="menu" aria-labelledby="aria-label-forward-menu">
-		<li role="menuitem"><a class="forward inline disabled" id="rcmbtn114" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('forward-inline','sub',this,event)">innerhalb der Nachricht</a></li>
-		<li role="menuitem"><a class="forward attachment disabled" id="rcmbtn115" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('forward-attachment','sub',this,event)">Als Anhang weiterleiten</a></li>
-		<li role="menuitem"><a class="forward bounce disabled" id="rcmbtn116" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('bounce','',this,event)">Erneut senden (falls unzustellbar)</a></li>
-		
-	</ul>
-</div>
+        <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <img src="https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-storefront/default/dwead92c71/category-landing/mountain/seo-mtb-light.jpg?sw=632&sh=356&sm=cut&sfrm=jpg&q=80" alt="Mountain Explorer E-Bike"
+                class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Trail Explorer</h3>
+                <p class="text-gray-600 mb-4">High-torque motor for steep hills and forest trails.</p>
+                <p class="font-bold text-green-600">25 €/d • 125 €/wk</p>
+            </div>
+        </article>
 
-<div id="replyall-menu" class="popupmenu">
-	<h3 id="aria-label-replyall-menu" class="voice">Allen antworten-Optionen</h3>
-	<ul class="menu listing" role="menu" aria-labelledby="aria-label-replyall-menu">
-		<li role="menuitem"><a class="reply all disabled" id="rcmbtn117" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('reply-all','sub',this,event)">Allen antworten</a></li>
-		<li role="menuitem"><a class="reply list disabled" id="rcmbtn118" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('reply-list','sub',this,event)">Liste antworten</a></li>
-		
-	</ul>
-</div>
+        <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/ride-folding-bikes-6491fb43ae3de.jpg?resize=1400:*" alt="Folding Travel E-Bike"
+                class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Fold & Go</h3>
+                <p class="text-gray-600 mb-4">Compact and portable — ideal for mixed travel.</p>
+                <p class="font-bold text-green-600">18 €/d • 120 €/wk</p>
+            </div>
+        </article>
 
-<div id="message-menu" class="popupmenu">
-	<h3 id="aria-label-message-menu" class="voice">Weitere Nachrichtenaktionen</h3>
-	<ul class="menu listing" role="menu" aria-labelledby="aria-label-message-menu">
-		<li role="menuitem"><a class="print disabled" data-hidden="small" id="rcmbtn119" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('print','',this,event)">Nachricht drucken</a></li>
-		
-		<li role="menuitem"><a class="download disabled" id="rcmbtn120" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('download','',this,event)">Exportieren</a></li>
-		<li role="menuitem"><a class="edit asnew disabled" id="rcmbtn121" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('edit','new',this,event)">Als neue Nachricht öffnen</a></li>
-		<li role="menuitem"><a class="source disabled" id="rcmbtn122" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('viewsource','',this,event)">Quelltext anzeigen</a></li>
-		<li role="menuitem"><a class="move disabled" aria-haspopup="true" id="rcmbtn123" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('move','',this,event)"><span class="folder-selector-link">Verschieben nach …</span></a></li>
-		<li role="menuitem"><a class="copy disabled" aria-haspopup="true" id="rcmbtn124" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('copy','',this,event)"><span class="folder-selector-link">Kopieren nach …</span></a></li>
-		<li role="menuitem"><a target="_blank" class="extwin disabled" data-hidden="small" id="rcmbtn125" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('open','',this,event)">In neuem Fenster öffnen</a></li>
-		<li role="menuitem"><a class="icon filterlink disabled" id="rcmbtn100" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('managesieve-create','',this,event)"><span class="icon filterlink">Filter erstellen</span></a></li>
+        <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <img src="https://www.babboepro.com/media/vrachtfiets-babboe.jpg" alt="Cargo E-Bike"
+                class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Cargo Pro</h3>
+                <p class="text-gray-600 mb-4">Carry groceries, gear or kids — powerful load capacity.</p>
+                <p class="font-bold text-green-600">59 €/d • 289 €/wk</p>
+            </div>
+        </article>
 
-	</ul>
-</div>
+        <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <img src="https://media.istockphoto.com/id/2220142601/de/foto/professioneller-radfahrer-bereitet-sich-auf-die-fahrt-vor-und-steckt-eine-wasserflasche-in-den.jpg?s=612x612&w=0&k=20&c=1u9Vc19Puo6WsU2LJOGLEW8wHSfBJABd8eDMgHaGIJE=" alt="Sport E-Bike"
+                class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Sport Performance</h3>
+                <p class="text-gray-600 mb-4">Speed-boosted battery and responsive handling.</p>
+                <p class="font-bold text-green-600">69 €/d • 319 €/wk</p>
+            </div>
+        </article>
 
-<div id="markmessage-menu" class="popupmenu">
-	<h3 id="aria-label-markmessage-menu" class="voice">Ausgewählte Nachricht markieren als …</h3>
-	<ul class="menu listing" role="menu" aria-labelledby="aria-label-markmessage-menu">
-		<li role="menuitem"><a class="read disabled" id="rcmbtn126" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('mark','read',this,event)">Als gelesen</a></li>
-		<li role="menuitem"><a class="unread disabled" id="rcmbtn127" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('mark','unread',this,event)">Als ungelesen</a></li>
-		<li role="menuitem"><a class="flag disabled" id="rcmbtn128" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('mark','flagged',this,event)">Als wichtig</a></li>
-		<li role="menuitem"><a class="unflag disabled" id="rcmbtn129" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('mark','unflagged',this,event)">Als unwichtig</a></li>
-		
-		<li role="menuitem"><a class="undo disabled" id="rcmbtn130" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('mark','undelete',this,event)">As not deleted</a></li>
-		
-		
-	</ul>
-</div>
+        <article class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <img src="https://media.istockphoto.com/id/2214702720/de/foto/frau-fährt-tagsüber-mit-einem-elektrofahrrad-vor-einem-modernen-stadtgebäude.jpg?s=612x612&w=0&k=20&c=MJCsR9_az2EvaWPjbinqqnjOZz9xToyzxVq3aeAYeIE="
+                class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2">Comfort Step-Through</h3>
+                <p class="text-gray-600 mb-4">Easy access, upright riding — perfect for beginners.</p>
+                <p class="font-bold text-green-600">29 €/d • 159 €/wk</p>
+            </div>
+        </article>
 
+    </section>
 
+    <!-- VIDEO SECTION -->
+    <section class="bg-green-50 py-16">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-6">How Our Bikes Work</h2>
 
-		</div>
-	
-	<div class="content frame-content" role="main">
-		<div id="message-header">
-			<h2 class="subject">
-				<span class="voice">Betreff: </span>
-				(kein Betreff)
-				
-					<a class="extwin" title="In neuem Fenster öffnen" data-hidden="small" id="rcmbtn131" role="button" href="/C00jp5qecKTdB2EP/?_task=mail&amp;_action=show&amp;_uid=547&amp;_mbox=INBOX" onclick="return rcmail.command('extwin','',this,event)"><span class="inner">In neuem Fenster öffnen</span></a>
-				
-			</h2>
-			<div class="header">
-				<img src="/C00jp5qecKTdB2EP/?_task=addressbook&amp;_action=photo&amp;_email=vituswagensonner%40icloud.com&amp;_error=1&amp;_bgcolor=transparent" alt="Foto des Kontakts" class="contactphoto" onerror="this.onerror = null; this.src = '/static-wfyqXPeqprJRkMQw/skins/elastic/images/contactpic.svg';">
-				<div class="header-content">
-					<div class="header-summary"><span>Von <span class="adr"><a href="mailto:vituswagensonner@icloud.com" class="rcmContactAddress" onclick="return rcmail.command('compose','Vitus Wagensonner &lt;vituswagensonner@icloud.com&gt;',this)" title="vituswagensonner@icloud.com">Vitus Wagensonner</a><a href="#add" title="Ins Adressbuch übernehmen" class="rcmaddcontact" onclick="return rcmail.command('add-contact','Vitus Wagensonner &lt;vituswagensonner@icloud.com&gt;',this)"></a></span> am <span class="text-nowrap">21.11.2025 17:08</span></span></div>
-					<table class="header-headers"><tbody><tr><td class="header-title">Von</td><td class="header from"><span class="adr"><a href="mailto:vituswagensonner@icloud.com" class="rcmContactAddress" onclick="return rcmail.command('compose','Vitus Wagensonner &lt;vituswagensonner@icloud.com&gt;',this)" title="vituswagensonner@icloud.com">Vitus Wagensonner</a><a href="#add" title="Ins Adressbuch übernehmen" class="rcmaddcontact" onclick="return rcmail.command('add-contact','Vitus Wagensonner &lt;vituswagensonner@icloud.com&gt;',this)"></a></span></td></tr><tr><td class="header-title">An</td><td class="header to"><span class="adr"><a href="mailto:oc0452@mci4me.at" class="rcmContactAddress" onclick="return rcmail.command('compose','oc0452@mci4me.at',this)" title="oc0452@mci4me.at">oc0452@mci4me.at</a><a href="#add" title="Ins Adressbuch übernehmen" class="rcmaddcontact" onclick="return rcmail.command('add-contact','oc0452@mci4me.at',this)"></a></span></td></tr><tr><td class="header-title">Datum</td><td class="header date">Heute 17:08</td></tr></tbody></table>
-					<div class="header-links">
-						
-						
-						<a href="#headers" class="headers-summary" onclick="return UI.headers_show(true)"></a>
-						<a href="#all-headers" class="headers-all" onclick="return UI.headers_dialog()">Kopfzeilen</a>
-						
-						
-						
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="message-content">
-			<div class="leftcol" role="region" aria-labelledby="aria-label-messageattachments">
-				<h2 id="aria-label-messageattachments" class="voice">Anhänge</h2>
-				<ul id="attachment-list" class="attachmentslist"><li class="text html" id="attach1"><a href="/C00jp5qecKTdB2EP/?_task=mail&amp;_action=get&amp;_mbox=INBOX&amp;_uid=547&amp;_part=1" onclick="rcmail.command('load-attachment','1',this); return false" onmouseover="rcube_webmail.long_subject_title_ex(this, 0)" title="" class="filename"><span class="attachment-name">catalog.html</span><span class="attachment-size">(~8 KB)</span></a></li><li class="text html" id="attach2"><a href="/C00jp5qecKTdB2EP/?_task=mail&amp;_action=get&amp;_mbox=INBOX&amp;_uid=547&amp;_part=2" onclick="rcmail.command('load-attachment','2',this); return false" onmouseover="rcube_webmail.long_subject_title_ex(this, 0)" title="" class="filename"><span class="attachment-name">index.html</span><span class="attachment-size">(~9 KB)</span></a></li></ul><a href="/C00jp5qecKTdB2EP/?_task=mail&amp;_action=plugin.zipdownload.attachments&amp;_mbox=INBOX&amp;_uid=547" class="button zipdownload">Alle Anhänge herunterladen</a>
-			</div>
-			<div class="rightcol" role="region" aria-labelledby="aria-label-messagebody">
-				<h2 id="aria-label-messagebody" class="voice">Nachrichten-Body</h2>
-				<div id="message-objects">
-<div id="remote-objects-message" class="notice" style="display: none"><span>Um Ihre Privatsphäre zu schützen, wurden externe Ressourcen blockiert.</span>&nbsp;<span class="boxbuttons"><a href="#loadremote" onclick="rcmail.command('load-remote')">Erlauben</a></span></div>
-</div>
-				<div id="messagebody"><div class="message-part"><div class="pre"></div></div></div>
-			</div>
-		</div>
-	</div>
-</div>
+            <video controls preload="metadata" poster="images/video-poster.jpg" class="w-full rounded-2xl shadow-lg">
+                <source src="mixkit-cyclist-traveling-through-a-forest-seen-from-the-back-wheel-40886-hd-ready.mp4" type="video/mp4">
+                <source src="videos/bike-intro.webm" type="video/webm">
+                <track kind="captions" src="videos/captions.vtt" srclang="en" label="English">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
 
-<!-- popup menus -->
-<div id="attachmentmenu" class="popupmenu">
-	<h3 id="aria-label-attachmentmenu" class="voice">Anhangsoptionen</h3>
-	<ul class="menu listing" role="menu" aria-labelledby="aria-label-attachmentmenu">
-		<li role="menuitem"><a id="attachmenuopen" class="extwin disabled" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('open-attachment','',this,event)">Öffnen</a></li>
-		<li role="menuitem"><a id="attachmenudownload" class="download disabled" role="button" tabindex="-1" aria-disabled="true" href="#" onclick="return rcmail.command('download-attachment','',this,event)">Herunterladen</a></li>
-		
-	</ul>
-</div>
+    <!-- EXAMPLE IMAGE SECTION (requested) -->
+    <section class="py-20 max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-semibold mb-6">A Moment of Freedom</h2>
 
-<div id="mailto-menu" class="popupmenu">
-	<h3 id="aria-label-mailtomenu" class="voice">Optionen für E-Mail-Adressen</h3>
-	<ul class="menu listing" role="menu" aria-labelledby="aria-label-mailtomenu">
-		<li role="menuitem"><a class="addressbook" id="rcmbtn132" role="button" tabindex="-1" aria-disabled="true" href="#">Ins Adressbuch übernehmen</a></li>
-		<li role="menuitem"><a class="compose" id="rcmbtn133" role="button" tabindex="-1" aria-disabled="true" href="#">Nachricht verfassen</a></li>
-		
-	</ul>
-</div>
+        <img src="https://raw.githubusercontent.com/vheikkiniemi/BasicsOfWebDevelopment2025S/refs/heads/main/Assignments/example.jpg" alt="Sunset by the sea" class="w-full rounded-xl shadow-lg mb-4">
 
+        <p class="text-gray-600 max-w-2xl mx-auto">
+            Just like watching the sun set over the calm sea, riding an e-bike offers a quiet, peaceful moment —
+            a short escape from the rush of everyday life.  
+            Perfect roads, fresh air, and the freedom to explore at your own pace.
+        </p>
+    </section>
 
-</div>
-
-
-
-<div id="messagestack"></div>
-<script>
-$(function() {
-rcmail.init();
-});
-</script>
-
-
-
-<script src="/static-wfyqXPeqprJRkMQw/skins/elastic/deps/bootstrap.bundle.min.js?s=1749023864"></script>
-<script src="/static-wfyqXPeqprJRkMQw/skins/elastic/ui.min.js?s=1749023864"></script>
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-10">
+        <div class="max-w-6xl mx-auto text-center">
+            <p>&copy; 2025 RideNow. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
